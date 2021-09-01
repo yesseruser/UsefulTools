@@ -59,5 +59,16 @@ namespace UsefulTools
                 return min;
             }
         }
+        public static class TextStuff
+        {
+            public static void PrintSomething(string text)
+            {
+                Console.WriteLine(text);
+            }
+            public static void PrintSomethingWithoutEndLine(string text)
+            {
+                Console.WriteLine(text);
+            }
+        }
     }
 }
