@@ -69,6 +69,24 @@ namespace UsefulTools
             {
                 Console.WriteLine(text);
             }
+            public static string JoinStrings(string[] strings)
+            {
+                string output = "";
+                foreach (string item in strings)
+                {
+                    output += item;
+                }
+                return output;
+            }
+            public static string JoinChars(char[] chars)
+            {
+                string output = "";
+                foreach (char item in chars)
+                {
+                    output += item;
+                }
+                return output;
+            }
         }
     }
 }

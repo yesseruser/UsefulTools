@@ -14,6 +14,9 @@ namespace Test
             decimal diameter = Tools.Aritmetic.Diameter(testStuff);
             Console.WriteLine(max + " " + min + " " + sum + " " + diameter);
             Console.ReadKey();
+            char[] chars = { 'A', 'b', 'c', 'd', 'e', 'f', 'g' };
+            string idk = Tools.TextStuff.JoinChars(chars);
+            Console.WriteLine(idk);
         }
     }
 }
