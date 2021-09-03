@@ -27,7 +27,7 @@ namespace UsefulTools
                 }
                 return sum;
             }
-            public static int Count<T>(T[] nums) => nums.Length;
+            public static int Count<T>(T[] stuff) => stuff.Length;
             public static decimal Max(decimal[] nums)
             {
                 decimal max = nums[0];
