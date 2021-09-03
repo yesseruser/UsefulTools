@@ -4,6 +4,7 @@
     {
         public static class Numbers
         {
+            public static readonly double pi = 3.14159265359;
             public static decimal Add(decimal num1, decimal num2) => num1 + num2;
             public static decimal Substract(decimal num1, decimal num2) => num1 - num2;
             public static decimal Multiply(decimal num1, decimal num2) => num1 * num2;
