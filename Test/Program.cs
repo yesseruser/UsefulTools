@@ -15,7 +15,7 @@ namespace Test
             Console.WriteLine(max + " " + min + " " + sum + " " + diameter);
             Console.ReadKey();
             char[] chars = { 'A', 'b', 'c', 'd', 'e', 'f', 'g' };
-            string idk = Tools.TextStuff.JoinChars(chars);
+            string idk = Tools.Texts.JoinChars(chars);
             Console.WriteLine(idk);
         }
     }

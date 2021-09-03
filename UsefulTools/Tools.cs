@@ -59,7 +59,7 @@ namespace UsefulTools
                 return min;
             }
         }
-        public static class TextStuff
+        public static class Texts
         {
             public static void PrintSomething(string text)
             {
