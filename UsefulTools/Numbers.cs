@@ -29,11 +29,11 @@
             public static decimal Max(decimal[] nums)
             {
                 decimal max = nums[0];
-                for(int i = 0; i < Count(nums); i++)
+                for (int i = 0; i < Count(nums); i++)
                 {
                     foreach (int item in nums)
                     {
-                        if(max < item)
+                        if (max < item)
                         {
                             max = item;
                         }

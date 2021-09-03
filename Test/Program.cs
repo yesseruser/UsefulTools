@@ -3,9 +3,9 @@ using UsefulTools;
 
 namespace Test
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             decimal[] testStuff = { 1, 2, 4, -50, -2343214, Convert.ToDecimal(111.4343), 2509 };
             decimal max = Tools.Numbers.Max(testStuff);
