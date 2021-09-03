@@ -87,6 +87,8 @@ namespace UsefulTools
                 }
                 return output;
             }
+            public static string Lower(string text) => text.ToLower();
+            public static string Upper(string text) => text.ToUpper();
         }
     }
 }
