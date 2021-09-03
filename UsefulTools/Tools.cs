@@ -2,7 +2,7 @@
 
 namespace UsefulTools
 {
-    public static class Tools
+    public class Tools
     {
         public static class Numbers
         {
