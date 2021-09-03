@@ -4,7 +4,7 @@ namespace UsefulTools
 {
     public static class Tools
     {
-        public static class Aritmetic
+        public static class Numbers
         {
             public static decimal Add(decimal num1, decimal num2) => num1 + num2;
             public static decimal Substract(decimal num1, decimal num2) => num1 - num2;
