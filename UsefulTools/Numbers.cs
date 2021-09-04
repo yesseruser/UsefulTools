@@ -101,7 +101,7 @@
                 }
                 return min;
             }
-            public static decimal ToDecimal(decimal number) => System.Convert.ToDecimal(number);
+            public static decimal ToDecimal(double number) => System.Convert.ToDecimal(number);
         }
     }
 }
