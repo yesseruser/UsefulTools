@@ -2,7 +2,7 @@
 {
     public partial class Tools
     {
-        public class Author
+        public struct Author
         {
             public string firstName;
             public string middleName;

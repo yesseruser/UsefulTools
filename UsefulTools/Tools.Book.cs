@@ -2,7 +2,7 @@
 {
     public partial class Tools
     {
-        public class Book
+        public struct Book
         {
             public int pages;
             public string title;
