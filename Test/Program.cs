@@ -17,7 +17,7 @@ namespace Test
             char[] chars = { 'A', 'b', 'c', 'd', 'e', 'f', 'g' };
             string idk = Tools.Texts.JoinChars(chars);
             Console.WriteLine(idk);
-            string why = "2.5";
+            int why = 2;
             Console.WriteLine(Tools.Numbers.ToDecimal(why));
         }
     }
