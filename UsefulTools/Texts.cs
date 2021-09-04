@@ -34,7 +34,8 @@ namespace UsefulTools
             }
             public static string Lower(string text) => text.ToLower();
             public static string Upper(string text) => text.ToUpper();
-            public static bool IsNullOrWhitespace(string text) => IsNullOrWhitespace(text);
+            public static bool IsNullOrWhitespace(string text) => String.IsNullOrWhiteSpace(text);
+
         }
     }
 }
