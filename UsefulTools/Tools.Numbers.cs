@@ -1,4 +1,6 @@
-﻿namespace UsefulTools
+﻿using System;
+
+namespace UsefulTools
 {
     public partial class Tools
     {
@@ -105,7 +107,7 @@
                 }
                 return min;
             }
-            public static decimal ToDecimal(double number) => System.Convert.ToDecimal(number);
+            public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
         }
     }
 }
