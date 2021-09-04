@@ -6,6 +6,32 @@ namespace UsefulTools
     {
         public static class Texts
         {
+            public struct Author
+            {
+                public string firstName;
+                public string middleName;
+                public string lastName;
+
+                public Author(string firstName, string middleName, string lastName)
+                {
+                    this.firstName = firstName;
+                    this.middleName = middleName;
+                    this.lastName = lastName;
+                }
+            }
+            public struct Book
+            {
+                public int pages;
+                public string title;
+                public Author author;
+
+                public Book(int pages, string title, Author author)
+                {
+                    this.pages = pages;
+                    this.title = title;
+                    this.author = author;
+                }
+            }
             public static void PrintSomething(string text)
             {
                 Console.WriteLine(text);
