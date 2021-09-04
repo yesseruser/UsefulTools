@@ -108,6 +108,7 @@ namespace UsefulTools
                 return min;
             }
             public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
+            public static T ReturnInput<T>(T thing) => thing;
         }
     }
 }
