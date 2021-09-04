@@ -54,26 +54,26 @@
             public static decimal Multiply(decimal num1, decimal num2) => num1 * num2;
             public static decimal Divide(decimal num1, decimal num2) => num1 / num2;
             public static decimal Modulo(decimal num1, decimal num2) => num1 % num2;
-            public static decimal Diameter(decimal[] nums)
+            public static double Diameter(double[] nums)
             {
-                decimal sum = Sum(nums);
+                double sum = Sum(nums);
                 int count = Count(nums);
-                decimal result = sum / count;
+                double result = sum / count;
                 return result;
             }
-            public static decimal Sum(decimal[] nums)
+            public static double Sum(double[] nums)
             {
-                decimal sum = 0;
-                foreach (decimal item in nums)
+                double sum = 0;
+                foreach (double item in nums)
                 {
                     sum += item;
                 }
                 return sum;
             }
             public static int Count<T>(T[] stuff) => stuff.Length;
-            public static decimal Max(decimal[] nums)
+            public static double Max(double[] nums)
             {
-                decimal max = nums[0];
+                double max = nums[0];
                 for (int i = 0; i < Count(nums); i++)
                 {
                     foreach (int item in nums)
@@ -86,9 +86,9 @@
                 }
                 return max;
             }
-            public static decimal Min(decimal[] nums)
+            public static double Min(double[] nums)
             {
-                decimal min = nums[0];
+                double min = nums[0];
                 for (int i = 0; i < Count(nums); i++)
                 {
                     foreach (int item in nums)
@@ -101,6 +101,7 @@
                 }
                 return min;
             }
+            public static decimal ToDecimal(decimal number) => System.Convert.ToDecimal(number);
         }
     }
 }
