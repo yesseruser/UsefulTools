@@ -13,6 +13,7 @@
                     this.width = width;
                     this.heigth = heigth;
                 }
+                public override string ToString() => $"{width} × {heigth}";
             }
             public struct Size3D
             {
@@ -25,6 +26,7 @@
                     this.heigth = heigth;
                     this.length = length;
                 }
+                public override string ToString() => $"{width} × {heigth} × {length}";
             }
             public struct Coordinates2D
             {
@@ -35,6 +37,7 @@
                     this.x = x;
                     this.y = y;
                 }
+                public override string ToString() => $"{x} × {y}";
             }
             public struct Coordinates3D
             {
@@ -47,6 +50,7 @@
                     this.y = y;
                     this.z = z;
                 }
+                public override string ToString() => $"{x} × {y} × {z}";
             }
             public const double pi = 3.14159265359;
             public static decimal Add(decimal num1, decimal num2) => num1 + num2;
