@@ -6,7 +6,7 @@ namespace UsefulTools
     {
         public static class Other
         {
-            public static void CloseApp(int exitCode)
+            public static void CloseApp(int exitCode = 0)
             {
                 Environment.Exit(exitCode);
             }
