@@ -6,6 +6,9 @@ namespace UsefulTools
     {
         public static class Numbers
         {
+            /// <summary>
+            /// A 2D size struct.
+            /// </summary>
             public struct Size2D
             {
                 public double width;
@@ -17,6 +20,9 @@ namespace UsefulTools
                 }
                 public override string ToString() => $"{width} × {heigth}";
             }
+            /// <summary>
+            /// A 3D size struct.
+            /// </summary>
             public struct Size3D
             {
                 public double width;
@@ -30,6 +36,9 @@ namespace UsefulTools
                 }
                 public override string ToString() => $"{width} × {heigth} × {length}";
             }
+            /// <summary>
+            /// A 2D coordinate struct.
+            /// </summary>
             public struct Coordinates2D
             {
                 public double x;
@@ -41,6 +50,9 @@ namespace UsefulTools
                 }
                 public override string ToString() => $"{x} × {y}";
             }
+            /// <summary>
+            /// A 3D coordinate struct.
+            /// </summary>
             public struct Coordinates3D
             {
                 public double x;
@@ -54,12 +66,50 @@ namespace UsefulTools
                 }
                 public override string ToString() => $"{x} × {y} × {z}";
             }
+            /// <summary>
+            /// The pi constant.
+            /// </summary>
             public const double pi = 3.14159265359;
+            /// <summary>
+            /// Adds two nums together.
+            /// </summary>
+            /// <param name="num1">number 1</param>
+            /// <param name="num2">number 2</param>
+            /// <returns>The added numbers</returns>
             public static decimal Add(decimal num1, decimal num2) => num1 + num2;
+            /// <summary>
+            /// Substracts two nums.
+            /// </summary>
+            /// <param name="num1">number 1</param>
+            /// <param name="num2">number 2</param>
+            /// <returns>The substracted numbers</returns>
             public static decimal Substract(decimal num1, decimal num2) => num1 - num2;
+            /// <summary>
+            /// Multiplies two nums.
+            /// </summary>
+            /// <param name="num1">number 1</param>
+            /// <param name="num2">number 2</param>
+            /// <returns>The multiplied numbers</returns>
             public static decimal Multiply(decimal num1, decimal num2) => num1 * num2;
+            /// <summary>
+            /// Divides two numbers.
+            /// </summary>
+            /// <param name="num1">number 1</param>
+            /// <param name="num2">number 2</param>
+            /// <returns>The divided numbers</returns>
             public static decimal Divide(decimal num1, decimal num2) => num1 / num2;
+            /// <summary>
+            /// Returns the remainder of dividing two numbers.
+            /// </summary>
+            /// <param name="num1">number 1</param>
+            /// <param name="num2">number 2</param>
+            /// <returns>The remainder</returns>
             public static decimal Modulo(decimal num1, decimal num2) => num1 % num2;
+            /// <summary>
+            /// Returns the diameter of given numbers.
+            /// </summary>
+            /// <param name="nums">The array of numbers</param>
+            /// <returns>The diameter of given numbers</returns>
             public static double Diameter(double[] nums)
             {
                 double sum = Sum(nums);
@@ -67,6 +117,11 @@ namespace UsefulTools
                 double result = sum / count;
                 return result;
             }
+            /// <summary>
+            /// Returns the sum of the given numbers.
+            /// </summary>
+            /// <param name="nums">The array of numbers.</param>
+            /// <returns>The sum</returns>
             public static double Sum(double[] nums)
             {
                 double sum = 0;
@@ -76,7 +131,18 @@ namespace UsefulTools
                 }
                 return sum;
             }
+            /// <summary>
+            /// Counts how many values are in an array.
+            /// </summary>
+            /// <typeparam name="T">The type of the array</typeparam>
+            /// <param name="stuff">The given array</param>
+            /// <returns></returns>
             public static int Count<T>(T[] stuff) => stuff.Length;
+            /// <summary>
+            /// Returns the maximum of given numbers.
+            /// </summary>
+            /// <param name="nums">The array of numbers</param>
+            /// <returns></returns>
             public static double Max(double[] nums)
             {
                 double max = nums[0];
@@ -92,6 +158,11 @@ namespace UsefulTools
                 }
                 return max;
             }
+            /// <summary>
+            /// Returns the minimum of given numbers.
+            /// </summary>
+            /// <param name="nums">The array of numbers</param>
+            /// <returns>The minimum</returns>
             public static double Min(double[] nums)
             {
                 double min = nums[0];
@@ -107,7 +178,18 @@ namespace UsefulTools
                 }
                 return min;
             }
+            /// <summary>
+            /// Converts a number to decimal.
+            /// </summary>
+            /// <param name="number">The number to convert</param>
+            /// <returns>The converted decimal</returns>
             public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
+            /// <summary>
+            /// Returns any input you give it.
+            /// </summary>
+            /// <typeparam name="T">The type of the thing to output and the output itself</typeparam>
+            /// <param name="thing">The thing to output</param>
+            /// <returns>The parameter given</returns>
             public static T ReturnInput<T>(T thing) => thing;
         }
     }
