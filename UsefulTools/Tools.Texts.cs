@@ -52,7 +52,7 @@ namespace UsefulTools
             /// <param name="text">The text to print</param>
             public static void PrintSomethingWithoutEndLine(string text)
             {
-                Console.WriteLine(text);
+                Console.Write(text);
             }
             /// <summary>
             /// Joins an array of strings together into one string, without separating the members.
