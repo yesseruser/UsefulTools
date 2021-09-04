@@ -62,7 +62,6 @@ namespace UsefulTools
             public static string Upper(string text) => text.ToUpper();
             public static bool IsNullOrWhitespace(string text) => string.IsNullOrWhiteSpace(text);
             public static string ToString<T>(T value) where T : IConvertible => Convert.ToString(value);
-
         }
     }
 }
