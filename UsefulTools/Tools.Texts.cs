@@ -58,7 +58,7 @@ namespace UsefulTools
             /// Joins an array of strings together into one string, without separating the members.
             /// </summary>
             /// <param name="strings">The array to join</param>
-            /// <returns></returns>
+            /// <returns>The joined string</returns>
             public static string JoinStrings(string[] strings)
             {
                 string output = "";
@@ -72,7 +72,7 @@ namespace UsefulTools
             /// Joins an array of characters together into one string, without separating the members.
             /// </summary>
             /// <param name="chars">The array to join</param>
-            /// <returns></returns>
+            /// <returns>The joined string</returns>
             public static string JoinChars(char[] chars)
             {
                 string output = "";
@@ -86,26 +86,26 @@ namespace UsefulTools
             /// Converts text to lowercase.
             /// </summary>
             /// <param name="text">The text to convert</param>
-            /// <returns></returns>
+            /// <returns>The lowercase string</returns>
             public static string Lower(string text) => text.ToLower();
             /// <summary>
             /// Converts text to uppercase.
             /// </summary>
             /// <param name="text">The text to convert</param>
-            /// <returns></returns>
+            /// <returns>The uppercase string</returns>
             public static string Upper(string text) => text.ToUpper();
             /// <summary>
             /// Returns true if the given input is blank or whitespace.
             /// </summary>
             /// <param name="text">The text to scan</param>
-            /// <returns></returns>
+            /// <returns>True if the given value is null or whitespace</returns>
             public static bool IsNullOrWhitespace(string text) => string.IsNullOrWhiteSpace(text);
             /// <summary>
             /// Converts anything convertible to string.
             /// </summary>
             /// <typeparam name="T">The type of the given parameter</typeparam>
             /// <param name="value">The value to convert</param>
-            /// <returns></returns>
+            /// <returns>The converted value</returns>
             public static string ToString<T>(T value) where T : IConvertible => Convert.ToString(value);
         }
     }
