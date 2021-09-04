@@ -6,6 +6,9 @@ namespace UsefulTools
     {
         public static class Texts
         {
+            /// <summary>
+            /// An author struct.
+            /// </summary>
             public struct Author
             {
                 public string firstName;
@@ -19,6 +22,9 @@ namespace UsefulTools
                     this.lastName = lastName;
                 }
             }
+            /// <summary>
+            /// A book struct.
+            /// </summary>
             public struct Book
             {
                 public int pages;
@@ -32,14 +38,27 @@ namespace UsefulTools
                     this.author = author;
                 }
             }
+            /// <summary>
+            /// Prints something with a new line at the end.
+            /// </summary>
+            /// <param name="text">The text to print</param>
             public static void PrintSomething(string text)
             {
                 Console.WriteLine(text);
             }
+            /// <summary>
+            /// Prints something without a new line at the end.
+            /// </summary>
+            /// <param name="text">The text to print</param>
             public static void PrintSomethingWithoutEndLine(string text)
             {
                 Console.WriteLine(text);
             }
+            /// <summary>
+            /// Joins an array of strings together into one string, without separating the members.
+            /// </summary>
+            /// <param name="strings">The array to join</param>
+            /// <returns></returns>
             public static string JoinStrings(string[] strings)
             {
                 string output = "";
@@ -49,6 +68,11 @@ namespace UsefulTools
                 }
                 return output;
             }
+            /// <summary>
+            /// Joins an array of characters together into one string, without separating the members.
+            /// </summary>
+            /// <param name="chars">The array to join</param>
+            /// <returns></returns>
             public static string JoinChars(char[] chars)
             {
                 string output = "";
@@ -58,9 +82,30 @@ namespace UsefulTools
                 }
                 return output;
             }
+            /// <summary>
+            /// Converts text to lowercase.
+            /// </summary>
+            /// <param name="text">The text to convert</param>
+            /// <returns></returns>
             public static string Lower(string text) => text.ToLower();
+            /// <summary>
+            /// Converts text to uppercase.
+            /// </summary>
+            /// <param name="text">The text to convert</param>
+            /// <returns></returns>
             public static string Upper(string text) => text.ToUpper();
+            /// <summary>
+            /// Returns true if the given input is blank or whitespace.
+            /// </summary>
+            /// <param name="text">The text to scan</param>
+            /// <returns></returns>
             public static bool IsNullOrWhitespace(string text) => string.IsNullOrWhiteSpace(text);
+            /// <summary>
+            /// Converts anything convertible to string.
+            /// </summary>
+            /// <typeparam name="T">The type of the given parameter</typeparam>
+            /// <param name="value">The value to convert</param>
+            /// <returns></returns>
             public static string ToString<T>(T value) where T : IConvertible => Convert.ToString(value);
         }
     }
