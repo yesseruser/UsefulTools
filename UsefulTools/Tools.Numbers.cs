@@ -184,13 +184,6 @@ namespace UsefulTools
             /// <param name="number">The number to convert</param>
             /// <returns>The converted decimal</returns>
             public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
-            /// <summary>
-            /// Returns any input you give it.
-            /// </summary>
-            /// <typeparam name="T">The type of the thing to output and the output itself</typeparam>
-            /// <param name="thing">The thing to output</param>
-            /// <returns>The parameter given</returns>
-            public static T ReturnInput<T>(T thing) => thing;
         }
     }
 }
