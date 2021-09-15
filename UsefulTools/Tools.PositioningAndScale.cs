@@ -2,7 +2,7 @@
 {
     public partial class Tools
     {
-        public static class Positioning
+        public static partial class PositioningAndScale
         {
             /// <summary>
             /// A 2D size struct.
@@ -47,6 +47,16 @@
                     this.y = y;
                 }
                 public override string ToString() => $"{x} × {y}";
+                /// <summary>
+                /// Moves the position.
+                /// </summary>
+                /// <param name="x">The x position to add. Can be negative.</param>
+                /// <param name="y">The y position to add. Can be negative.</param>
+                public void Move(double x = 0, double y = 0)
+                {
+                    this.x += x;
+                    this.y += y;
+                }
             }
             /// <summary>
             /// A 3D coordinate struct.
@@ -63,6 +73,18 @@
                     this.z = z;
                 }
                 public override string ToString() => $"{x} × {y} × {z}";
+                /// <summary>
+                /// Moves the position.
+                /// </summary>
+                /// <param name="x">The x position to add. Can be negative.</param>
+                /// <param name="y">The y position to add. Can be negative.</param>
+                /// <param name="z">The z position to add. Can be negative.</param>
+                public void Move(double x = 0, double y = 0, double z = 0)
+                {
+                    this.x += x;
+                    this.y += y;
+                    this.z += z;
+                }
             }
         }
     }
