@@ -21,6 +21,9 @@ namespace UsefulTools
             /// <param name="thing">The thing to output</param>
             /// <returns>The parameter given</returns>
             public static T ReturnInput<T>(T thing) => thing;
+            /// <summary>
+            /// Throws a System.StackOverflow exception.
+            /// </summary>
             public static void ThrowStackOverflowException()
             {
                 ThrowStackOverflowException();
