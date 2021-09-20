@@ -21,6 +21,10 @@ namespace UsefulTools
             /// <param name="thing">The thing to output</param>
             /// <returns>The parameter given</returns>
             public static T ReturnInput<T>(T thing) => thing;
+            public static void ThrowStackOverflowException()
+            {
+                ThrowStackOverflowException();
+            }
         }
     }
 }
