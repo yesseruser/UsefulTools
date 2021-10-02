@@ -93,6 +93,8 @@ namespace UsefulTools
             public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
 
             public static double Power(double num1, double num2) => Math.Pow(num1, num2);
+
+            public static double Sqrt(double number) => Math.Sqrt(number);
         }
     }
 }
