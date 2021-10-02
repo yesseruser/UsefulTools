@@ -92,8 +92,19 @@ namespace UsefulTools
             /// <returns>The converted decimal</returns>
             public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
 
+            /// <summary>
+            /// Returns num1^num2.
+            /// </summary>
+            /// <param name="num1">The number to be powered</param>
+            /// <param name="num2">The power</param>
+            /// <returns></returns>
             public static double Power(double num1, double num2) => Math.Pow(num1, num2);
 
+            /// <summary>
+            /// Returns the square root of number.
+            /// </summary>
+            /// <param name="number">The number</param>
+            /// <returns></returns>
             public static double Sqrt(double number) => Math.Sqrt(number);
         }
     }
