@@ -101,11 +101,18 @@ namespace UsefulTools
             public static double Power(double num1, double num2) => Math.Pow(num1, num2);
 
             /// <summary>
-            /// Returns the square root of number.
+            /// Returns the square root of number, which is ²√number.
             /// </summary>
             /// <param name="number">The number</param>
             /// <returns></returns>
             public static double Sqrt(double number) => Math.Sqrt(number);
+
+            /// <summary>
+            /// Returns the cube root of number, which is ³√number.
+            /// </summary>
+            /// <param name="number"></param>
+            /// <returns></returns>
+            public static double Cbrt(double number) => Math.Cbrt(number);
         }
     }
 }
