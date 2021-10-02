@@ -91,6 +91,8 @@ namespace UsefulTools
             /// <param name="number">The number to convert</param>
             /// <returns>The converted decimal</returns>
             public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
+
+            public static double Power(double num1, double num2) => Math.Pow(num1, num2);
         }
     }
 }
