@@ -17,7 +17,7 @@ namespace UsefulTools
             /// </summary>
             /// <param name="nums">The array of numbers</param>
             /// <returns>The diameter of given numbers</returns>
-            public static double Diameter(double[] nums)
+            public static double Average(double[] nums)
             {
                 double sum = Sum(nums);
                 int count = Count(nums);
