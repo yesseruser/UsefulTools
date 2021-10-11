@@ -12,7 +12,7 @@ namespace Test
             double max = Tools.Numbers.Max(testStuff);
             double min = Tools.Numbers.Min(testStuff);
             double sum = Tools.Numbers.Sum(testStuff);
-            double diameter = Tools.Numbers.Diameter(testStuff);
+            double diameter = Tools.Numbers.Average(testStuff);
             Console.WriteLine(max + " " + min + " " + sum + " " + diameter);
             char[] chars = { 'A', 'b', 'c', 'd', 'e', 'f', 'g' };
             string idk = Tools.Texts.JoinChars(chars);
