@@ -26,7 +26,7 @@ If applicable, add screenshots to help explain your problem.
 **Desktop (please complete the following information):**
  - OS: [e.g. Windows]
  - .NET version [e.g. 5.0]
- - Version [e.g. 1.0]
+ - Library version [e.g. 1.0]
 
 **Additional context**
 Add any other context about the problem here.
