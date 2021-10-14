@@ -9,8 +9,7 @@ namespace UsefulTools
             /// <summary>
             /// The pi constant.
             /// </summary>
-            public const double pi = 3.14159265359;
-            
+            public const double pi = Math.PI;
             
             /// <summary>
             /// Returns the diameter of given numbers.
