@@ -15,7 +15,7 @@ namespace UsefulTools
                 public string middleName;
                 public string lastName;
 
-                public Author(string firstName, string middleName, string lastName)
+                public Author(string firstName, string lastName, string middleName = "")
                 {
                     this.firstName = firstName;
                     this.middleName = middleName;
