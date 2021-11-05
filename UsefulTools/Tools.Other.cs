@@ -28,6 +28,13 @@ namespace UsefulTools
             {
                 ThrowStackOverflowException();
             }
+            /// <summary>
+            /// Returns any input array.
+            /// </summary>
+            /// <typeparam name="T">The type of the array.</typeparam>
+            /// <param name="inputArray">The array to return.</param>
+            /// <returns>The inputarray parameter.</returns>
+            public static T[] ReturnInputArray<T>(T[] inputArray) => inputArray;
         }
     }
 }
