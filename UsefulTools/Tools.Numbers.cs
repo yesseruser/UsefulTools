@@ -10,7 +10,23 @@ namespace UsefulTools
             /// The pi constant.
             /// </summary>
             public const double pi = Math.PI;
-            
+
+            #region MaxValues
+            public const short maxShort = short.MaxValue;
+            public const int maxInt = int.MaxValue;
+            public const long maxLong = long.MaxValue;
+            public const float maxFloat = float.MaxValue;
+            public const double maxDouble = double.MaxValue;
+            #endregion
+
+            #region MinValues
+            public const short minShort = short.MinValue;
+            public const int minInt = int.MinValue;
+            public const long minLong = long.MinValue;
+            public const float minFloat = float.MinValue;
+            public const double minDouble = double.MinValue;
+            #endregion
+
             /// <summary>
             /// Returns the diameter of given numbers.
             /// </summary>
