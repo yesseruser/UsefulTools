@@ -10,7 +10,61 @@ namespace UsefulTools
             /// The pi constant.
             /// </summary>
             public const double pi = Math.PI;
-            
+
+            #region MaxValues
+            /// <summary>
+            /// The maximum number for 16-bit intengers.
+            /// </summary>
+            public const short maxShort = short.MaxValue;
+            /// <summary>
+            /// The maximum number for 32-bit intengers.
+            /// </summary>
+            public const int maxInt = int.MaxValue;
+            /// <summary>
+            /// The maximum number for 64-bit intengers.
+            /// </summary>
+            public const long maxLong = long.MaxValue;
+            /// <summary>
+            /// The maximum number for 32-bit decimals.
+            /// </summary>
+            public const float maxFloat = float.MaxValue;
+            /// <summary>
+            /// The maximum number for 64-bit decimals.
+            /// </summary>
+            public const double maxDouble = double.MaxValue;
+            /// <summary>
+            /// The maximum number for 128-bit decimals.
+            /// </summary>
+            public const decimal maxDecimal = decimal.MaxValue;
+            #endregion
+
+            #region MinValues
+            /// <summary>
+            /// The minimum number for 16-bit intengers.
+            /// </summary>
+            public const short minShort = short.MinValue;
+            /// <summary>
+            /// The minimum number for 32-bit intengers.
+            /// </summary>
+            public const int minInt = int.MinValue;
+            /// <summary>
+            /// The minimum number for 64-bit intengers.
+            /// </summary>
+            public const long minLong = long.MinValue;
+            /// <summary>
+            /// The minimum number for 32-bit decimals.
+            /// </summary>
+            public const float minFloat = float.MinValue;
+            /// <summary>
+            /// The minimum number for 64-bit decimals.
+            /// </summary>
+            public const double minDouble = double.MinValue;
+            /// <summary>
+            /// The minimum number for 128-bit decimals.
+            /// </summary>
+            public const decimal minDecimal = decimal.MinValue;
+            #endregion
+
             /// <summary>
             /// Returns the diameter of given numbers.
             /// </summary>
