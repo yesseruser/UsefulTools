@@ -45,7 +45,7 @@
 
                 }
             }
-            public class Circle2D : Rectangle
+            public class Circle : Rectangle
             {
                 /// <summary>
                 /// The radius of the circle.
