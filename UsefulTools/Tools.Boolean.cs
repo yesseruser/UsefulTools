@@ -7,12 +7,12 @@
             /// <summary>
             /// Returns true. Cannot be changed.
             /// </summary>
-            public static bool True { get => true; }
+            public static bool True => true;
 
             /// <summary>
             /// Returns false. Cannot be changed.
             /// </summary>
-            public static bool False { get => false; }
+            public static bool False => false;
 
             /// <summary>
             /// Returns the negation of the input value.
