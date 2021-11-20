@@ -1,5 +1,4 @@
-﻿using System;
-using UsefulTools;
+﻿using UsefulTools;
 
 namespace Test
 {
