@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace UsefulTools
+﻿namespace UsefulTools
 {
     public partial class Tools
     {
