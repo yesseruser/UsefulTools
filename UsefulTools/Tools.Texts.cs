@@ -52,23 +52,6 @@
             {
                 Console.Write(text);
             }
-
-            public static void PrintSomethingColored(string text, ConsoleColor color)
-            {
-                ConsoleColor prevColor = Console.ForegroundColor;
-                Console.ForegroundColor = color;
-                Console.WriteLine(text);
-                Console.ForegroundColor = prevColor;
-            }
-
-            public static void PrintSomethingColoredWithoutEndLine(string text, ConsoleColor color)
-            {
-                ConsoleColor prevColor = Console.ForegroundColor;
-                Console.ForegroundColor = color;
-                Console.Write(text);
-                Console.ForegroundColor = prevColor;
-            }
-
             /// <summary>
             /// Joins an array of strings together into one string, without separating the members.
             /// </summary>
