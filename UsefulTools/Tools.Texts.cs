@@ -53,6 +53,11 @@
                 Console.Write(text);
             }
 
+            /// <summary>
+            /// Prints something colored with a new line at the end.
+            /// </summary>
+            /// <param name="text">The text to print.</param>
+            /// <param name="color">The color to print with.</param>
             public static void PrintSomethingColored(string text, ConsoleColor color)
             {
                 ConsoleColor prevColor = Console.ForegroundColor;
@@ -61,6 +66,11 @@
                 Console.ForegroundColor = prevColor;
             }
 
+            /// <summary>
+            /// Prints something colored without a new line at the end.
+            /// </summary>
+            /// <param name="text">The text to print.</param>
+            /// <param name="color">The color to print with.</param>
             public static void PrintSomethingColoredWithoutEndLine(string text, ConsoleColor color)
             {
                 ConsoleColor prevColor = Console.ForegroundColor;
