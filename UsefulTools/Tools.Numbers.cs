@@ -141,7 +141,8 @@
             /// </summary>
             /// <param name="number">The number to convert</param>
             /// <returns>The converted decimal</returns>
-            public static decimal ToDecimal(double number) => Convert.ToDecimal(number);
+            public static decimal ToDecimal(double number)
+                => Convert.ToDecimal(number);
 
             /// <summary>
             /// Returns num1^num2.
@@ -149,21 +150,24 @@
             /// <param name="num1">The number to be powered</param>
             /// <param name="num2">The power</param>
             /// <returns></returns>
-            public static double Power(double num1, double num2) => Math.Pow(num1, num2);
+            public static double Power(double num1, double num2)
+                => Math.Pow(num1, num2);
 
             /// <summary>
             /// Returns the square root of number, which is ²√number.
             /// </summary>
             /// <param name="number">The number</param>
             /// <returns></returns>
-            public static double Sqrt(double number) => Math.Sqrt(number);
+            public static double Sqrt(double number)
+                => Math.Sqrt(number);
 
             /// <summary>
             /// Returns the cube root of number, which is ³√number.
             /// </summary>
             /// <param name="number"></param>
             /// <returns></returns>
-            public static double Cbrt(double number) => Math.Cbrt(number);
+            public static double Cbrt(double number)
+                => Math.Cbrt(number);
         }
     }
 }
