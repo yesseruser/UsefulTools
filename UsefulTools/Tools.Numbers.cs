@@ -166,8 +166,33 @@
             /// </summary>
             /// <param name="number"></param>
             /// <returns></returns>
+
             public static double Cbrt(double number)
                 => Math.Cbrt(number);
+            
+            /// <summary>
+            ///  Returns true if the given intenger is prime.
+            /// </summary>
+            /// <param name="number">The given intenger</param>
+            /// <returns>True if the given intenger is prime.</returns>
+            public static bool IsPrime(int number)
+            {
+                if (number < 2) return false;
+                if (number == 2) return true;
+                if (number % 2 == 0) return false;
+
+                int max = (int)Math.Sqrt(number);
+
+                for (int i = 3; i <= max; i += 2)
+                {
+                    if (number % i == 0)
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
         }
     }
 }
