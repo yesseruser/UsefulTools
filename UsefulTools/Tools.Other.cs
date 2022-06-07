@@ -33,6 +33,9 @@
             /// <param name="inputArray">The array to return.</param>
             /// <returns>The inputarray parameter.</returns>
             public static T[] ReturnInputArray<T>(T[] inputArray) => inputArray;
+
+            public static string ObjToJSON(object obj) => JsonSerializer.Serialize(obj);
+            public static T JSONToObj<T>(string JSON) => JsonSerializer.Deserialize<T>(JSON);
         }
     }
 }
