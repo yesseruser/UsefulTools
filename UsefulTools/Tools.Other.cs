@@ -33,6 +33,11 @@
             /// <param name="inputArray">The array to return.</param>
             /// <returns>The inputarray parameter.</returns>
             public static T[] ReturnInputArray<T>(T[] inputArray) => inputArray;
+
+            public static string ObjToJSON(object obj)
+            {
+                string json = 
+            }
         }
     }
 }
