@@ -1,4 +1,6 @@
-﻿namespace UsefulTools
+﻿using System;
+
+namespace UsefulTools
 {
     public partial class Tools
     {
@@ -43,6 +45,31 @@
                 public Rectangle()
                 {
 
+                }
+            }
+            [Obsolete]
+            public class Circle2D : Rectangle
+            {
+                /// <summary>
+                /// The radius of the circle.
+                /// </summary>
+                public double Radius
+                {
+                    get
+                    {
+                        return size.width / 2;
+                    }
+                }
+
+                /// <summary>
+                /// The diameter of the circle.
+                /// </summary>
+                public double Diameter
+                {
+                    get
+                    {
+                        return Radius * 2;
+                    }
                 }
             }
         }
