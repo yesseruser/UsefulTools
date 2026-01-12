@@ -6,6 +6,16 @@
         {
             public class Circle : Rectangle
             {
+                public Circle(double radius, Coordinates2D coordinates)
+                {
+                    size = new Size2D(radius * 2, radius * 2);
+                    this.coordinates = coordinates;
+                }
+
+                public Circle(double radius, double x, double y) : this(radius, new Coordinates2D(x, y))
+                {
+                }
+
                 /// <summary>
                 /// The radius of the circle.
                 /// </summary>
