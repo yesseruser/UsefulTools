@@ -47,7 +47,8 @@ namespace UsefulTools
 
                 }
             }
-            [Obsolete]
+
+            [Obsolete("Circle2D is deprecated, use Circle instead")]
             public class Circle2D : Rectangle
             {
                 /// <summary>
