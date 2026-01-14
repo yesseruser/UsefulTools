@@ -8,6 +8,8 @@
             {
                 public Circle(double radius, Coordinates2D coordinates)
                 {
+                    if (radius <= 0)
+                        throw new ArgumentOutOfRangeException(nameof(radius), "Radius must be positive.");
                     size = new Size2D(radius * 2, radius * 2);
                     this.coordinates = coordinates;
                 }
