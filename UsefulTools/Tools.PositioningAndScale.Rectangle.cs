@@ -1,4 +1,6 @@
-﻿namespace UsefulTools
+﻿using System;
+
+namespace UsefulTools
 {
     public partial class Tools
     {
@@ -45,6 +47,8 @@
 
                 }
             }
+
+            [Obsolete("Circle2D is deprecated, use Circle instead")]
             public class Circle2D : Rectangle
             {
                 /// <summary>
